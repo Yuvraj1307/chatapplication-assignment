@@ -8,6 +8,10 @@ const app = express()
 const { userJoin, getRoomUsers, getCurrentUser, userLeave } = require("./utils/users")
 const formateMessage = require("./utils/messages")
 
+
+app.get("/",(req,res)=>{
+    res.send("hello")
+})
 //server connection 
 const server = http.createServer(app)
 const io = socketio(server)
