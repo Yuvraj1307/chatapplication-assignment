@@ -9,7 +9,7 @@ const { userJoin, getRoomUsers, getCurrentUser, userLeave } = require("./utils/u
 const formateMessage = require("./utils/messages")
 
 
-app.use("/",(req,res)=>{
+app.get("/",(req,res)=>{
     res.send("hello")
 })
 //server connection 
